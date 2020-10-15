@@ -30,3 +30,7 @@ main {
   width: 625px;
   height: 480px;
 }
+.text-main {
+  color: #e58f00;
+  font-size: 26px;
+}
