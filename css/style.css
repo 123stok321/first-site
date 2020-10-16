@@ -38,3 +38,10 @@ main {
   color: white;
   font-size: 24px;
 }
+.btn-contact {
+  background-color: #e58f00;
+  color: black;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  font-size: 24px;
+}
