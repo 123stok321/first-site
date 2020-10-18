@@ -8,7 +8,7 @@ section {
   padding: 10rem 0;
 }
 main {
-  background: #27272c url(../img/01_1.png) center center no-repeat;
+  background: #1d1d23 url(../img/01_1.png) center center no-repeat;
   padding: 3rem 0;
 }
 .row_m {
@@ -42,6 +42,17 @@ main {
   padding: 2rem 3rem;
   border-radius: 8px;
   font-size: 24px;
+}
+.main_about {
+  background: #1d1d23;
+}
+.main_about img {
+  padding: 10px;
+  /* Поля вокруг текста */
+}
+.main_about .col-md-5 {
+  font-size: 20px;
+  color: white;
 }
 @font-face {
   font-family: 'Myriad Pro';
