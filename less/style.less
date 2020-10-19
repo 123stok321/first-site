@@ -6,8 +6,15 @@
 /* basic setting */
 html {
     font-size: 10px;
-
+ 
+ 
 }
+//  //пропорциональное уменьшение картинок при уменьшении экрана
+//  img {
+//     display: block;
+//     height: auto;
+//     max-width: 100%;
+//   }
 /*typography*/
 section{
     padding: 10rem 0;
@@ -72,6 +79,7 @@ main{
      }
      
  }
+
  .main_dop{
     background: @back url(../img/03_1.png) center center no-repeat;
     background-size: cover;
@@ -82,17 +90,14 @@ main{
         line-height:1.2;
         padding-block: 10% auto;
     }
-    .slim {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .slim > [class^="col-"], .slim > [class*=" col-"] {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+   
+    .img_ta{
+        float: right;
     }
  }
-
+.container-fluid{
+    padding: 0;
+}
 
  @font-face {
     font-family: 'Myriad Pro';
