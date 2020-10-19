@@ -9,6 +9,7 @@ section {
 }
 main {
   background: #1d1d23 url(../img/01_1.png) center center no-repeat;
+  background-size: cover;
   padding: 3rem 0;
 }
 .row_m {
@@ -47,12 +48,35 @@ main {
   background: #1d1d23;
 }
 .main_about img {
-  padding: 10px;
+  margin: 80px 20px 20px 20px;
   /* Поля вокруг текста */
 }
-.main_about .col-md-5 {
-  font-size: 20px;
+.main_about .col-md-4 {
+  margin: 160px 0px 0px 0px;
+  font-weight: 500;
+  font-size: 35px;
   color: white;
+  line-height: 1.2;
+}
+.main_dop {
+  background: #1d1d23 url(../img/03_1.png) center center no-repeat;
+  background-size: cover;
+}
+.main_dop p,
+.main_dop small {
+  font-size: 45px;
+  color: white;
+  line-height: 1.2;
+  padding-block: 10% auto;
+}
+.main_dop .slim {
+  margin-left: 0;
+  margin-right: 0;
+}
+.main_dop .slim > [class^="col-"],
+.main_dop .slim > [class*=" col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 @font-face {
   font-family: 'Myriad Pro';

@@ -18,6 +18,7 @@ body {
 }
 main{
     background: @back url(../img/01_1.png) center center no-repeat;
+    background-size: cover;
     padding: 3rem 0;
 }
  .row_m {
@@ -58,17 +59,41 @@ main{
  .main_about{
      background: @back;
      img{
-        padding: 10px; /* Поля вокруг текста */
+        margin: 80px 20px 20px 20px; /* Поля вокруг текста */
        // margin: 10px; /* Отступы вокруг */
      }
-     .col-md-5
+     .col-md-4
      {
-         font-size: 20px;
+         margin: 160px 0px 0px 0px;
+         font-weight: 500;
+         font-size: 35px;
          color: white;
+         line-height:1.2;
      }
      
  }
- 
+ .main_dop{
+    background: @back url(../img/03_1.png) center center no-repeat;
+    background-size: cover;
+     
+    p, small{
+        font-size: 45px;
+        color: white;
+        line-height:1.2;
+        padding-block: 10% auto;
+    }
+    .slim {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .slim > [class^="col-"], .slim > [class*=" col-"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+ }
+
+
  @font-face {
     font-family: 'Myriad Pro';
     src: url('../fonts/MyriadPro-Regular.eot');
