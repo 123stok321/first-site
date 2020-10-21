@@ -7,6 +7,9 @@ html {
 section {
   padding: 10rem 0;
 }
+body {
+  background-color: #1d1d23;
+}
 main {
   background: #1d1d23 url(../img/01_1.png) center center no-repeat;
   background-size: cover;
@@ -59,18 +62,29 @@ main {
   line-height: 1.2;
 }
 .main_dop {
-  background: #1d1d23 url(../img/03_1.png) center center no-repeat;
-  background-size: cover;
+  margin-top: 50px;
+  background: #1d1d23 url(../img/03_1.png) center 0 no-repeat;
+  background-size: contain   ;
 }
 .main_dop p,
 .main_dop small {
   font-size: 45px;
   color: white;
   line-height: 1.2;
-  padding-block: 10% auto;
 }
 .main_dop .img_ta {
   float: right;
+}
+.main_dop .col-md-8 {
+  position: relative;
+  height: 35%;
+}
+.main_dop .col-md-8 .div {
+  padding-left: 150px;
+  margin-top: -200px;
+}
+.main_dop .img_t {
+  margin-top: -1000px;
 }
 .container-fluid {
   padding: 0;

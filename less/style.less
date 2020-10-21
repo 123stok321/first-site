@@ -20,7 +20,7 @@ section{
     padding: 10rem 0;
 }
 body {
-  //  background-color: @back;
+     background-color: @back;
   
 }
 main{
@@ -81,22 +81,43 @@ main{
  }
 
  .main_dop{
-    background: @back url(../img/03_1.png) center center no-repeat;
-    background-size: cover;
+     margin-top: 50px;
+     background: @back url(../img/03_1.png)  center 0  no-repeat ;
+     background-size: contain   ;
+ 
+
+   // height:  100%;
+    
      
     p, small{
         font-size: 45px;
         color: white;
         line-height:1.2;
-        padding-block: 10% auto;
+        
     }
    
     .img_ta{
+       // margin-top: -100px;
         float: right;
+    }
+    .col-md-8{
+        position: relative;
+        height: 35%;
+      .div{
+          padding-left: 150px;
+          margin-top: -200px;
+          
+      }
+        
+       // padding: 200px;
+    }
+    .img_t{
+        margin-top: -1000px;
     }
  }
 .container-fluid{
     padding: 0;
+    
 }
 
  @font-face {
