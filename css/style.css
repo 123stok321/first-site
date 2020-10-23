@@ -16,6 +16,11 @@ main {
   padding: 3rem 0;
   margin-top: -100px;
 }
+h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
 .row_m {
   text-transform: uppercase;
   text-align: center;
@@ -117,7 +122,31 @@ main {
   text-align: center;
   padding-top: 300px;
 }
+.our_menu {
+  padding: 50px;
+  margin: 10px;
+}
 .our_menu p {
+  color: white;
+}
+.our_menu .g_img {
+  margin-top: 15px;
+}
+.our_menu strong {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #e58f00;
+}
+.our_menu p {
+  font-size: 10px;
+}
+.our_menu .price {
+  color: #e58f00;
+  font-size: 25px;
+}
+.final {
+  background: #1d1d23 url(../img/7.png) center center no-repeat;
+  background-size: contain;
   color: white;
 }
 @font-face {
