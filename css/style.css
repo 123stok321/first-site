@@ -97,6 +97,29 @@ main {
 .galerry .g_img {
   margin-top: 15px;
 }
+.enjou {
+  background: #1d1d23 url(../img/5_1.png) center center no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  height: 965px;
+}
+.enjou .container-fluid {
+  height: 965px;
+}
+.enjou .ram {
+  position: relative;
+  padding: 100px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 300px;
+}
+.our_menu p {
+  color: white;
+}
 @font-face {
   font-family: 'Myriad Pro';
   src: url('../fonts/MyriadPro-Regular.eot');
