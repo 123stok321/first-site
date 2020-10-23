@@ -146,8 +146,17 @@ h1 {
 }
 .final {
   background: #1d1d23 url(../img/7.png) center center no-repeat;
-  background-size: contain;
+  background-size: 100% 450px;
   color: white;
+}
+.ffinal {
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+}
+.ffinal .row {
+  margin-top: 70px;
+  margin-bottom: 5%;
 }
 @font-face {
   font-family: 'Myriad Pro';
