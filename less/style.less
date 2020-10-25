@@ -3,221 +3,273 @@
 @text: #9baf6d;
 @back: #1d1d23;
 @text_main: #e58f00;
-/* basic setting */
-html {
-    font-size: 30px;
-   
- 
-}
- //пропорциональное уменьшение картинок при уменьшении экрана
- img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-  }
-/*typography*/
-
-@media (min-width: 410px)  {
-    p, h1{
-      font-size: 10px;
-    }
-   small {
-    font-size: 6px;
-    }
-  }
-
-section{
-    padding: 10rem 0;
-}
-body {
-     background-color: @back;
-  
+body{
+background-color: @back;
+color: white;
+font-family: 'Myriad Pro';
 }
 main{
     background: @back url(../img/01_1.png) center center no-repeat;
     background-size: cover;
-    padding: 3rem 0;
-    margin-top: -100px;
 }
-h1{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Myriad Pro', sans-serif;
-}
- 
- .row_m {
-     text-transform: uppercase;
-     text-align: center;
-     color: white;
-     font-size: 15px;
-      height: 7rem;
-      line-height: 7rem;
-      margin: 0px -5px;
- .col-md-1{    margin: 0px -5px;}
-   //   font-family: Arial, Helvetica, sans-serif;
-      font-family: 'Myriad Pro', sans-serif;
- }
- .row_c {
-    text-align: center;
-    padding: 10rem 0;
- }
- .tarelka{
-     width: 625px;
-     height: 480px;
- }
- .text-main {
-     color: @text_main;
-     font-size: 50px;
- }
- .text-main_min{
-    color: white;
-    font-size: 24px;
- }
- .btn-contact {
-     background-color: @text_main;
-     color: black;
-     padding: 2rem 3rem;
-     border-radius: 8px;
-     font-size: 24px;
-
- }
- 
- .main_about{
-     background: @back;
-     img{
-        margin: 80px 20px 20px 20px; /* Поля вокруг текста */
-       // margin: 10px; /* Отступы вокруг */
-     }
-     .col-md-4
-     {
-         margin: 160px 0px 0px 0px;
-         font-weight: 500;
-         font-size: 35px;
-         color: white;
-         line-height:1.2;
-     }
-     
- }
-
- .main_dop{
-     margin-top: 50px;
-     background: @back url(../img/03_1.png)  center 0  no-repeat ;
-     background-size:  cover    ;      
- 
-   // height:  100%;
-    
-     
-    p, small{
-        font-size: 45px;
-        color: white;
-        line-height:1.2;
-        
-    }
-   
-    .img_ta{
-       // margin-top: -100px;
-        float: right;
-    }
-    .col-md-8{
-        position: relative;
-        height: 35%;
-      .div{
-          padding-left: 150px;
-          margin-top: -200px;
-          
-      }
-        
-       // padding: 200px;
-    }
-    .img_t{
-        margin-top: -700px;
-    }
- }
 .container-fluid{
-    padding: 0;
-    
+    margin: 0 ;
 }
-.galerry{
-    p{
-        color: white;
-        text-align: center;
-    }
-    .g_img{
-        margin-top: 15px;
-    }
-    
-}
-.enjou{
-    
-    background: @back url(../img/5_1.png) center center no-repeat;
-    background-size: cover;
-    margin-top: 100px;
-    height: 965px;
-    .container-fluid{
-        height: 965px;
-    }
-   .ram{ 
-       position: relative; 
-        padding: 100px;
-        display: inline-block;
-        align-items: center;
-        color: white;
-        text-align: center;
-        padding-top: 300px;
-         small {
-        //     vertical-align: middle;
-        //      width: 726px;
-        //      height: 574px;
-        //     position: absolute;
-        //    //right: 0;
-        //     color: white;
-        //     align-content: center;
-            
-        }
-     }
-}
-.our_menu{
-    padding: 50px;
-    margin: 10px;
-    p{
-        color: white;
-    }
-   .g_img{
-        
-        margin-top: 15px;
-    }
-    strong{
-        font-size: 20px;
+.header{
+    .row_header{
+        font-weight: 600; 
         text-transform: uppercase;
-        color: @text_main;
+        border: white 1px solid;
+        text-align: center;
+        .col-sm-12{
+            border: red 1px solid;
+
+        }
+    }
+    .row_c{
+        padding: 35px 0 35px 0;
+    }
+    h1{
+        color: @text_main;    
+        font-size: 6rem;    
     }
     p{
-        font-size: 10px;
-         
+        font-size: 1.2rem;
+        padding-right: 2rem;
     }
-    .price{
-        color: @text_main;
-        font-size: 25px;
+    .logo{
+        // padding: 20px 50px 0 50px;
+        width: 100%;
     }
+    .btn-contact {
+             background-color: @text_main;
+             color: black;
+             padding: 2rem 3rem;
+             border-radius: 8px;
+             font-size: 24px;
+        
+         }
 }
-.final{
-    background: @back url(../img/7.png) center center no-repeat;
-    background-size:  100% 450px;
-    color: white;
-    
-}
-.ffinal{
-    font-size: 13px;
-    color: white;
-    text-transform: uppercase;
-    
-    .row{
-        margin-top: 70px;
-        margin-bottom: 5%;
+/* colors*/
+// @btn-color :#4d5443;
+// @text: #9baf6d;
+// @back: #1d1d23;
+// @text_main: #e58f00;
+// /* basic setting */
+// html {
+//     font-size: 30px;
+   
  
-    }
-}
+// }
+//  пропорциональное уменьшение картинок при уменьшении экрана
+//  img {
+//     display: block;
+//     height: auto;
+//     max-width: 100%;
+//   }
+// /*typography*/
+
+// @media (min-width: 410px)  {
+//     p, h1{
+//       font-size: 10px;
+//     }
+//    small {
+//     font-size: 6px;
+//     }
+//   }
+
+// section{
+//     padding: 10rem 0;
+// }
+// body {
+//      background-color: @back;
+  
+// }
+// main{
+//     background: @back url(../img/01_1.png) center center no-repeat;
+//     background-size: cover;
+//     padding: 3rem 0;
+//     margin-top: -100px;
+// }
+// h1{
+//     color: white;
+//     font-size: 30px;
+//     text-align: center;
+//     font-family: 'Myriad Pro', sans-serif;
+// }
+ 
+//  .row_m {
+//      text-transform: uppercase;
+//      text-align: center;
+//      color: white;
+//      font-size: 15px;
+//       height: 7rem;
+//       line-height: 7rem;
+//       margin: 0px -5px;
+//  .col-md-1{    margin: 0px -5px;}
+//      font-family: Arial, Helvetica, sans-serif;
+//       font-family: 'Myriad Pro', sans-serif;
+//  }
+//  .row_c {
+//     text-align: center;
+//     padding: 10rem 0;
+//  }
+//  .tarelka{
+//      width: 625px;
+//      height: 480px;
+//  }
+//  .text-main {
+//      color: @text_main;
+//      font-size: 50px;
+//  }
+//  .text-main_min{
+//     color: white;
+//     font-size: 24px;
+//  }
+//  .btn-contact {
+//      background-color: @text_main;
+//      color: black;
+//      padding: 2rem 3rem;
+//      border-radius: 8px;
+//      font-size: 24px;
+
+//  }
+ 
+//  .main_about{
+//      background: @back;
+//      img{
+//         margin: 80px 20px 20px 20px; /* Поля вокруг текста */
+//        margin: 10px; /* Отступы вокруг */
+//      }
+//      .col-md-4
+//      {
+//          margin: 160px 0px 0px 0px;
+//          font-weight: 500;
+//          font-size: 35px;
+//          color: white;
+//          line-height:1.2;
+//      }
+     
+//  }
+
+//  .main_dop{
+//      margin-top: 50px;
+//      background: @back url(../img/03_1.png)  center 0  no-repeat ;
+//      background-size:  cover    ;      
+ 
+//    height:  100%;
+    
+     
+//     p, small{
+//         font-size: 45px;
+//         color: white;
+//         line-height:1.2;
+        
+//     }
+   
+//     .img_ta{
+//        margin-top: -100px;
+//         float: right;
+//     }
+//     .col-md-8{
+//         position: relative;
+//         height: 35%;
+//       .div{
+//           padding-left: 150px;
+//           margin-top: -200px;
+          
+//       }
+        
+//        padding: 200px;
+//     }
+//     .img_t{
+//         margin-top: -700px;
+//     }
+//  }
+// .container-fluid{
+//     padding: 0;
+    
+// }
+// .galerry{
+//     p{
+//         color: white;
+//         text-align: center;
+//     }
+//     .g_img{
+//         margin-top: 15px;
+//     }
+    
+// }
+// .enjou{
+    
+//     background: @back url(../img/5_1.png) center center no-repeat;
+//     background-size: cover;
+//     margin-top: 100px;
+//     height: 965px;
+//     .container-fluid{
+//         height: 965px;
+//     }
+//    .ram{ 
+//        position: relative; 
+//         padding: 100px;
+//         display: inline-block;
+//         align-items: center;
+//         color: white;
+//         text-align: center;
+//         padding-top: 300px;
+//          small {
+//             vertical-align: middle;
+//              width: 726px;
+//              height: 574px;
+//             position: absolute;
+//            //right: 0;
+//             color: white;
+//             align-content: center;
+            
+//         }
+//      }
+// }
+// .our_menu{
+//     padding: 50px;
+//     margin: 10px;
+//     p{
+//         color: white;
+//     }
+//    .g_img{
+        
+//         margin-top: 15px;
+//     }
+//     strong{
+//         font-size: 20px;
+//         text-transform: uppercase;
+//         color: @text_main;
+//     }
+//     p{
+//         font-size: 10px;
+         
+//     }
+//     .price{
+//         color: @text_main;
+//         font-size: 25px;
+//     }
+// }
+// .final{
+//     background: @back url(../img/7.png) center center no-repeat;
+//     background-size:  100% 450px;
+//     color: white;
+    
+// }
+// .ffinal{
+//     font-size: 13px;
+//     color: white;
+//     text-transform: uppercase;
+    
+//     .row{
+//         margin-top: 70px;
+//         margin-bottom: 5%;
+ 
+//     }
+// }
  @font-face {
     font-family: 'Myriad Pro';
     src: url('../fonts/MyriadPro-Regular.eot');
