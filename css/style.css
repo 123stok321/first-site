@@ -1,45 +1,113 @@
 /* colors*/
+html {
+  font-size: 100%;
+}
+h1 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+small,
+strong {
+  font-size: 1.8rem;
+}
+@media (min-width: 410px) {
+  html {
+    font-size: 60%;
+  }
+  .main_dop {
+    background: #1d1d23;
+  }
+  .main_dop_text {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .main_dop {
+    background: #1d1d23;
+  }
+  .main_dop_text {
+    padding: 50rem 10px 10px 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+  .main_dop_text {
+    padding: 50rem 10px 10px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  ы html {
+    font-size: 100%;
+  }
+  .main_dop_text {
+    padding: 80rem 10px 10px 20px;
+  }
+}
 body {
   background-color: #1d1d23;
   color: white;
-  font-family: 'Myriad Pro';
+  font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
 }
 main {
   background: #1d1d23 url(../img/01_1.png) center center no-repeat;
   background-size: cover;
+  padding-right: 15px;
 }
-.container-fluid {
-  margin: 0 ;
-}
-.header .row_header {
+main .header .row_header {
   font-weight: 600;
   text-transform: uppercase;
-  border: white 1px solid;
   text-align: center;
 }
-.header .row_header .col-sm-12 {
-  border: red 1px solid;
-}
-.header .row_c {
+main .header .row_c {
   padding: 35px 0 35px 0;
 }
-.header h1 {
+main .header h1 {
   color: #e58f00;
   font-size: 6rem;
 }
-.header p {
+main .header p {
   font-size: 1.2rem;
   padding-right: 2rem;
 }
-.header .logo {
+main .header .logo {
   width: 100%;
 }
-.header .btn-contact {
+main .header .btn-contact {
   background-color: #e58f00;
   color: black;
   padding: 2rem 3rem;
   border-radius: 8px;
   font-size: 24px;
+}
+.main_about {
+  margin-top: 20px;
+}
+.main_dop {
+  background: #1d1d23 url(../img/03_1.png) center 0 no-repeat;
+  background-size: cover    ;
+  padding-top: 50px;
+}
+.main_dop img {
+  float: right;
+}
+.main_dop .img_t img {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+.main_dop .img_ta img {
+  float: right;
+  width: 70%;
+  height: auto;
+  margin-top: 80rem;
 }
 /* colors*/
 @font-face {

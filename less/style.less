@@ -3,52 +3,122 @@
 @text: #9baf6d;
 @back: #1d1d23;
 @text_main: #e58f00;
+
+html{
+    font-size: 100%;
+ 
+}
+h1{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+small, strong{
+    font-size: 1.8rem;
+}
+
+@media (min-width: 410px) {
+   html{ font-size: 60%; }
+   .main_dop{ background: @back;}
+   .main_dop_text{        
+    padding: 0;
+    margin: 0; }
+ }
+@media (min-width: 768px) { 
+    html {font-size: 60%;   }
+    .main_dop{ background: @back;}
+    .main_dop_text{        
+        padding: 50rem 10px 10px 20px; }
+  }
+@media (min-width: 992px) {
+   html { font-size: 80%;}
+   .main_dop_text{        
+    padding: 50rem 10px 10px 20px; }
+ }
+ @media (min-width: 1200px) {ы
+   html { font-size: 100%;}
+   .main_dop_text{        
+    padding: 80rem 10px 10px 20px;
+         }
+  }
+
 body{
 background-color: @back;
 color: white;
-font-family: 'Myriad Pro';
+font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
 }
+
+
 main{
     background: @back url(../img/01_1.png) center center no-repeat;
     background-size: cover;
-}
-.container-fluid{
-    margin: 0 ;
-}
-.header{
-    .row_header{
-        font-weight: 600; 
-        text-transform: uppercase;
-        border: white 1px solid;
-        text-align: center;
-        .col-sm-12{
-            border: red 1px solid;
-
+    padding-right: 15px;
+    
+    .header{
+       
+        .row_header{
+            font-weight: 600; 
+            text-transform: uppercase;
+            //border: white 1px solid;
+            text-align: center;
+            // .col-sm-12{
+            //     border: red 1px solid;
+    
+            // }
+            
         }
+        .row_c{
+            padding: 35px 0 35px 0;
+            
+        }
+        h1{
+            color: @text_main;    
+            font-size: 6rem;    
+        }
+        p{
+            font-size: 1.2rem;
+            padding-right: 2rem;
+        }
+        .logo{
+            // padding: 20px 50px 0 50px;
+            width: 100%;
+        }
+        .btn-contact {
+                 background-color: @text_main;
+                 color: black;
+                 padding: 2rem 3rem;
+                 border-radius: 8px;
+                 font-size: 24px;
+            
+             }
     }
-    .row_c{
-        padding: 35px 0 35px 0;
+}
+ 
+.main_about{
+    margin-top: 20px;
+}
+.main_dop{
+    background: @back url(../img/03_1.png)  center 0  no-repeat ;
+    background-size:  cover    ;  
+    padding-top: 50px;
+    img{
+        float: right;
     }
-    h1{
-        color: @text_main;    
-        font-size: 6rem;    
+    .img_t img{
+        float: left;
+         width: 50%;
+        height: auto; 
     }
-    p{
-        font-size: 1.2rem;
-        padding-right: 2rem;
+    .img_ta img{
+        float: right;
+         width: 70%;
+        height: auto; 
+        margin-top: 80rem;
     }
-    .logo{
-        // padding: 20px 50px 0 50px;
-        width: 100%;
+    .main_dop_text{        
+       // padding: 50rem 10px 10px 20px;
     }
-    .btn-contact {
-             background-color: @text_main;
-             color: black;
-             padding: 2rem 3rem;
-             border-radius: 8px;
-             font-size: 24px;
-        
-         }
 }
 /* colors*/
 // @btn-color :#4d5443;
