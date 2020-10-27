@@ -12,45 +12,6 @@ small,
 strong {
   font-size: 1.8rem;
 }
-@media (min-width: 410px) {
-  html {
-    font-size: 60%;
-  }
-  .main_dop {
-    background: #1d1d23;
-  }
-  .main_dop_text {
-    padding: 0;
-    margin: 0;
-  }
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 60%;
-  }
-  .main_dop {
-    background: #1d1d23;
-  }
-  .main_dop_text {
-    padding: 50rem 10px 10px 20px;
-  }
-}
-@media (min-width: 992px) {
-  html {
-    font-size: 80%;
-  }
-  .main_dop_text {
-    padding: 50rem 10px 10px 20px;
-  }
-}
-@media (min-width: 1200px) {
-  ы html {
-    font-size: 100%;
-  }
-  .main_dop_text {
-    padding: 80rem 10px 10px 20px;
-  }
-}
 body {
   background-color: #1d1d23;
   color: white;
@@ -65,6 +26,9 @@ main .header .row_header {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+}
+main .header .row_header .logo {
+  margin-top: 15px;
 }
 main .header .row_c {
   padding: 35px 0 35px 0;
@@ -107,7 +71,120 @@ main .header .btn-contact {
   float: right;
   width: 70%;
   height: auto;
-  margin-top: 80rem;
+}
+.enjou {
+  background: #1d1d23 url(../img/5_1.png) center center no-repeat;
+  background-size: cover   ;
+  padding-top: 5%;
+  margin: 15px auto;
+  min-height: 960px;
+  width: 100%;
+}
+.enjou .container-fluid {
+  min-height: 960px;
+}
+.enjou .enjou_title {
+  margin: 200px 0px 0px 0px;
+}
+.enjou .enjou_text {
+  margin: 5px 0px 0px 0px;
+}
+.final {
+  margin: 15px;
+}
+.final .logo {
+  margin: 15px;
+}
+.ffinal {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+}
+.ffinal img {
+  margin: 15px;
+}
+@media (min-width: 410px) {
+  html {
+    font-size: 60%;
+  }
+  .main_dop {
+    background: #1d1d23;
+  }
+  .main_dop_text {
+    padding: 0;
+    margin: 0;
+  }
+  .enjou {
+    margin: -150px 0;
+    padding: 0;
+    background: #1d1d23 url(../img/5_1.png) center center no-repeat;
+    background-size: auto 65%;
+  }
+  .enjou .enjou_title {
+    margin-top: 380px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .main_dop {
+    background: #1d1d23;
+  }
+  .main_dop_text {
+    padding: 50rem 10px 10px 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+  .main_dop_text {
+    padding: 50rem 10px 10px 20px;
+  }
+  .enjou {
+    background: #1d1d23 url(../img/5_1.png) center center no-repeat;
+    background-size: cover   ;
+    padding-top: 5%;
+    margin: 15px auto;
+    min-height: 960px;
+    width: 100%;
+  }
+  .enjou .container-fluid {
+    min-height: 960px;
+  }
+  .enjou .enjou_title {
+    margin: 200px 0px 0px 0px;
+  }
+  .enjou .enjou_text {
+    margin: 5px 0px 0px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+  .main_dop_text {
+    padding: 80rem 10px 10px 20px;
+  }
+  .enjou {
+    background: #1d1d23 url(../img/5_1.png) center center no-repeat;
+    background-size: cover   ;
+    padding-top: 5%;
+    margin: 15px auto;
+    min-height: 960px;
+    width: 100%;
+  }
+  .enjou .container-fluid {
+    min-height: 960px;
+  }
+  .enjou .enjou_title {
+    margin: 200px 0px 0px 0px;
+  }
+  .enjou .enjou_text {
+    margin: 5px 0px 0px 0px;
+  }
 }
 /* colors*/
 @font-face {
