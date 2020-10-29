@@ -16,11 +16,25 @@ body {
   background-color: #1d1d23;
   color: white;
   font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body .container-fluid {
+  margin: 0;
+  padding: 0;
 }
 main {
   background: #1d1d23 url(../img/01_1.png) center center no-repeat;
   background-size: cover;
   padding-right: 15px;
+}
+main .container-fluid {
+  margin-left: 5%;
+}
+main .text_row {
+  font-size: 1.3rem;
+  padding-right: 2rem;
+  margin: 0 200px 15px 0;
+  margin-bottom: 3%;
 }
 main .header .row_header {
   font-weight: 600;
@@ -30,16 +44,24 @@ main .header .row_header {
 main .header .row_header .logo {
   margin-top: 15px;
 }
-main .header .row_c {
-  padding: 35px 0 35px 0;
+main .header .main_text {
+  margin-bottom: 5%;
+  margin-right: 30%;
+}
+main .header .text-main {
+  margin-right: 10%;
 }
 main .header h1 {
+  margin: 0 20px 15px 0;
   color: #e58f00;
   font-size: 6rem;
+  font-weight: 500;
+  font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
 }
 main .header p {
-  font-size: 1.2rem;
-  padding-right: 2rem;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+  margin-bottom: 3%;
 }
 main .header .logo {
   width: 100%;
@@ -51,8 +73,15 @@ main .header .btn-contact {
   border-radius: 8px;
   font-size: 24px;
 }
+main .header img {
+  margin-bottom: 10%;
+}
 .main_about {
-  margin-top: 20px;
+  margin-right: 5%;
+  margin-top: 7%;
+}
+.main_about .about_text {
+  margin: 0;
 }
 .main_dop {
   background: #1d1d23 url(../img/03_1.png) center 0 no-repeat;
@@ -61,6 +90,10 @@ main .header .btn-contact {
 }
 .main_dop img {
   float: right;
+}
+.main_dop .main_dop_text {
+  margin-left: 20%;
+  margin-top: 30%;
 }
 .main_dop .img_t img {
   float: left;
@@ -102,18 +135,22 @@ main .header .btn-contact {
   margin-top: 15px;
 }
 .ffinal img {
-  margin: 15px;
+  margin: 10px;
 }
 @media (min-width: 410px) {
   html {
     font-size: 60%;
   }
-  .main_dop {
-    background: #1d1d23;
+  .main_about {
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  .main_dop_text {
-    padding: 0;
-    margin: 0;
+  .main_about .about_text {
+    margin-top: 8%;
+  }
+  .main_dop .main_dop_text {
+    margin-left: 5%;
+    margin-top: 5%;
   }
   .enjou {
     margin: -150px 0;
@@ -124,24 +161,31 @@ main .header .btn-contact {
   .enjou .enjou_title {
     margin-top: 380px;
   }
+  .ffinal img {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media (min-width: 768px) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
-  .main_dop {
-    background: #1d1d23;
-  }
-  .main_dop_text {
-    padding: 50rem 10px 10px 20px;
+  .main_about .about_text {
+    margin-top: 0%;
   }
 }
 @media (min-width: 992px) {
   html {
     font-size: 80%;
+    margin: 0;
+    padding: 0;
   }
-  .main_dop_text {
-    padding: 50rem 10px 10px 20px;
+  .main_about .about_text {
+    margin-top: 0%;
+  }
+  .main_dop .main_dop_text {
+    margin-left: 20%;
+    margin-top: 30%;
   }
   .enjou {
     background: #1d1d23 url(../img/5_1.png) center center no-repeat;
@@ -165,8 +209,12 @@ main .header .btn-contact {
   html {
     font-size: 100%;
   }
-  .main_dop_text {
-    padding: 80rem 10px 10px 20px;
+  .main_about .about_text {
+    margin-top: 0%;
+  }
+  .main_dop .main_dop_text {
+    margin-left: 20%;
+    margin-top: 30%;
   }
   .enjou {
     background: #1d1d23 url(../img/5_1.png) center center no-repeat;
@@ -189,8 +237,8 @@ main .header .btn-contact {
 /* colors*/
 @font-face {
   font-family: 'Myriad Pro';
-  src: url('../fonts/MyriadPro-Regular.eot');
-  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  src: url('../fonts/13309.eot');
+  src: url('../fonts/13309.eot?#iefix') format('embedded-opentype'), url('../fonts/13309.woff2') format('woff2'), url('../fonts/13309.woff') format('woff'), url('../fonts/13309.ttf') format('truetype'), url('../fonts/13309.svg#13309') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
