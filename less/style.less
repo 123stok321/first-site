@@ -6,6 +6,7 @@
 
 html{
     font-size: 100%;
+    
  
 }
 h1{
@@ -24,14 +25,23 @@ body{
 background-color: @back;
 color: white;
 font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+margin: 0;
+.container-fluid{margin: 0; padding: 0;}
 }
-
+ 
 
 main{
+    .container-fluid{
+        margin-left: 5%;       
+    }
     background: @back url(../img/01_1.png) center center no-repeat;
     background-size: cover;
-    padding-right: 15px;
-    
+    padding-right: 15px;  
+     
+    .text_row {font-size: 1.3rem;
+        padding-right: 2rem;
+        margin: 0 200px 15px 0;
+        margin-bottom: 3%;}
     .header{
        
         .row_header{
@@ -47,22 +57,39 @@ main{
             
         }
         .row_c{
-            padding: 35px 0 35px 0;
+          //  padding: 35px 0 35px 0;
+        
             
         }
+        .main_text {
+           // position: relative;
+          //  margin-top: -5rem;
+            margin-bottom: 5%;
+            margin-right: 30%;
+        }
+        .text-main{
+            margin-right: 10%;
+        }
+         
         h1{
+            margin: 0 20px 15px 0;
             color: @text_main;    
-            font-size: 6rem;    
+            font-size: 6rem;  
+            font-weight: 500;  
+            font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
         }
         p{
-            font-size: 1.2rem;
-            padding-right: 2rem;
+            font-size: 1.3rem;
+            margin-right: 2rem;
+            // margin: 0 200px 15px 0;
+            margin-bottom: 3%;
         }
         .logo{
             // padding: 20px 50px 0 50px;
             width: 100%;
         }
         .btn-contact {
+                 
                  background-color: @text_main;
                  color: black;
                  padding: 2rem 3rem;
@@ -70,11 +97,19 @@ main{
                  font-size: 24px;
             
              }
+             img{
+                margin-bottom: 10%;
+             }
     }
 }
  
 .main_about{
-    margin-top: 20px;
+    margin-right: 5%;
+    margin-top: 7%;
+    .about_text{
+        margin: 0;
+    }
+    
 }
 .main_dop{
     background: @back url(../img/03_1.png)  center 0  no-repeat ;
@@ -83,6 +118,11 @@ main{
     img{
         float: right;
     }
+    .main_dop_text{
+        margin-left: 20%;        
+        margin-top:  30%;
+    }
+     
     .img_t img{
         float: left;
          width: 50%;
@@ -94,9 +134,7 @@ main{
         height: auto; 
         //margin-top: 80rem;
     }
-    .main_dop_text{        
-       // padding: 50rem 10px 10px 20px;
-    }
+    
 }
 .enjou{
     background: @back url(../img/5_1.png) center center no-repeat;
@@ -106,8 +144,6 @@ main{
     min-height: 960px;
     width: 100%;
     
-        
-     
     .container-fluid{
        min-height: 960px;
     }
@@ -133,16 +169,26 @@ main{
             margin-top: 15px;
           img{
                
-              margin: 15px;
+              margin: 10px;
             }
 }
 
 @media (min-width: 410px) {
     html{ font-size: 60%; }
-    .main_dop{ background: @back;}
-    .main_dop_text{        
-     padding: 0;
-     margin: 0; }
+     .main_about{     
+            
+            margin-left: 5%;       
+            margin-right: 5%; 
+            .about_text{
+                margin-top: 8%;   
+            }
+     }
+     .main_dop{
+        .main_dop_text{
+            margin-left: 5%;        
+            margin-top:  5%;
+        }
+     }
      .enjou{ 
     //   //  min-height: 500px;
     //      .container-fluid{min-height: 500px;}
@@ -151,22 +197,43 @@ main{
            background-size: auto 65%;
          .enjou_title{
              margin-top: 380px;
-         }        
- 
+         }      
+     }
+     .ffinal{
+        img{
+            width: 20px;
+             height: 20px;
+        }
      }
   }
  @media (min-width: 768px) { 
-     html {font-size: 60%;   }
-     .main_dop{ background: @back;}
-     .main_dop_text{        
-         padding: 50rem 10px 10px 20px; }
- 
+     html {font-size: 55%;   }
+     .main_about{
+        .about_text{
+            margin-top: 0%;   
+        }
+    }
+    // .main_dop{ background: @back;}
+    //  .main_dop_text{        
+    //      padding: 50rem 10px 10px 20px; }
+         
  
    }
  @media (min-width: 992px) {
-    html { font-size: 80%;}
-    .main_dop_text{        
-     padding: 50rem 10px 10px 20px; }
+    html { font-size: 80%;
+        margin: 0;
+padding: 0;}
+.main_about{
+    .about_text{
+        margin-top: 0%;   
+    }
+}
+    .main_dop{
+        .main_dop_text{
+            margin-left: 20%;        
+            margin-top:  30%;
+        }
+    }
  
     .enjou{
         background: @back url(../img/5_1.png) center center no-repeat;
@@ -192,9 +259,20 @@ main{
   }
   @media (min-width: 1200px) {
     html { font-size: 100%;}
-    .main_dop_text{        
-     padding: 80rem 10px 10px 20px;
-          }
+    // .main_dop_text{        
+    //  padding: 80rem 10px 10px 20px;
+    //       }
+    .main_about{
+        .about_text{
+            margin-top: 0%;   
+        }
+    }
+    .main_dop{
+        .main_dop_text{
+            margin-left: 20%;        
+            margin-top:  30%;
+        }
+    }
           .enjou{
             background: @back url(../img/5_1.png) center center no-repeat;
             background-size:  cover   ; 
@@ -440,12 +518,13 @@ main{
 // }
  @font-face {
     font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadPro-Regular.eot');
-    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
-        url('../fonts/MyriadPro-Regular.woff') format('woff'),
-        url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
-        url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    src: url('../fonts/13309.eot');
+    src: url('../fonts/13309.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/13309.woff2') format('woff2'),
+        url('../fonts/13309.woff') format('woff'),
+        url('../fonts/13309.ttf') format('truetype'),
+        url('../fonts/13309.svg#13309') format('svg');
+        
     font-weight: normal;
     font-style: normal;
     font-display: swap;
